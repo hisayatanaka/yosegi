@@ -74,6 +74,30 @@ _See also [Browsersync options](https://www.browsersync.io/docs/options#option-p
 Connected to nginx via proxy, 
 It is also possible to connect to another http server through different port numbers (ex. 8080). This is useful for development using golang, for example.
 
+## Setup sample for Google Compute Engine
+
+1. Create a new instance with CentOS.
+2. Add release of ports 3000 and 3001 to GCE 's network rule. 
+3. Connect to SSH prompto on browser.
+4. Exucute following `yum install` commands.
+5. Please install Yosegi (clone and npm install).
+6. Start the server (compass compile and npm start).
+7. Access `http://[External IP]:3000`.
+8. Enjoy!
+
+```
+$ sudo yum install git
+$ sudo yum install epel-release
+$ sudo yum install nodejs npm --enablerepo=epel
+$ sudo yum install ruby
+$ sudo yum install ruby-devel
+$ sudo yum install rubygems
+$ sudo yum install gcc
+$ sudo gem update --system
+$ sudo gem install sass
+$ sudo gem install compass
+```
+
 ## Snapshot
 
 ![Snapshot](https://github.com/hisayatanaka/yosegi/wiki/img/yosegi_screen.png "Snapshot")
