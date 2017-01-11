@@ -72,7 +72,7 @@ Browsersync has "proxy" option.
 _See also [Browsersync options](https://www.browsersync.io/docs/options#option-proxy)._
 
 Connected to nginx via proxy, 
-It is also possible to connect to another http server through different port numbers (ex. 8080). This is useful for development using golang, for example.
+It is also possible to connect to another socket server through different port numbers (ex. 8080). This is useful for development using golang, for example.
 
 ## Setup sample for Google Compute Engine
 
