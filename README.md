@@ -102,6 +102,25 @@ $ sudo gem install compass
 
 ![Snapshot](https://github.com/hisayatanaka/yosegi/wiki/img/yosegi_screen.png "Snapshot")
 
+## Structure
+
+* As a general rule, compilation etc. is done based on the contents of `src` and output to `dist`.
+* `img` `js` `css` directory is a static directory (can be freely changed / deleted)
+* `.babelrc` is the Babel configuration file
+* `bs-config.js` is the Browsersync configuration file
+* `config.rb` is the Sass configuration file
+* `webpack.config.js` is a webpack configuration file
+* `package.json` is a npm configuration file
+
+## Links
+
+[Riot.js](http://riotjs.com/v2/ja/ "Riot.js")  
+[Browsersync](https://www.browsersync.io/ "Browsersync")  
+[Webpack](https://webpack.github.io/ "Webpack")  
+[Babel](https://babeljs.io/ "Babel")  
+[Sass](http://sass-lang.com/ "Sass")  
+[Compass](http://compass-style.org/ "Compass")
+
 ## License
 
 MIT licensed. See the LICENSE file for details.
