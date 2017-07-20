@@ -6,15 +6,15 @@
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.7",
+    "babel-loader": "^7.1.1",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015-riot": "^1.1.0",
     "babel-runtime": "^6.18.0",
     "browser-sync": "^2.17.5",
-    "node-sass": "^3.11.2",
-    "riot": "^2.6.5",
-    "riotjs-loader": "^3.0.0",
-    "webpack": "^1.13.3"
+    "node-sass": "^4.5.3",
+    "riot": "^3.6.1",
+    "riotjs-loader": "^4.0.0",
+    "webpack": "^3.3.0"
   },
   "scripts": {
     "start": "webpack --watch -d & browser-sync start --config bs-config.js"
