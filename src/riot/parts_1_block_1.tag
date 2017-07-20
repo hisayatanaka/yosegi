@@ -2,12 +2,12 @@
 
 	<div class="parts_1_block_1">Parts 1 Block 1</div>
 
-	<style type="scss" scoped>
+	<style type="scss">
 		.parts_1_block_1 { color: green };
 	</style>
 
 	<script>
-		var _self = this; // Class内からの参照用
+		let _self = this; // For reference from within Class.
 
 		// Class
 		let classMain = class Main extends opts.inherit { // Inherited class

@@ -13,37 +13,50 @@ module.exports = {
 		filename: '[name].bundle.js',
 		publicPath: '/'
 	},
-	watchOptions: { // Vagrant内部で webpack --watchを有効にする
+	watchOptions: { // Enabeling "webpack --watch" on Vagrant.
 		poll: true
 	},
 	module: {
-		preLoaders: [
+		rules: [
 			{
 				test: /\.tag$/,
 				exclude: /node_modules/,
-				loader: 'riotjs-loader',
-				query: {
-					type: 'babel'
-				}
-			}
-		],
-		loaders: [
-			{
-				test: /\.js$|\.tag$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader' // ES6 to ES5
+				enforce: 'pre',
+				use: [
+					{
+						loader: 'riotjs-loader',
+						options: {
+							type: 'none' // Required 'none' for use Babel.
+						}
+					}
+				]
 			},
+			{
+				test: /\.js|\.tag$/,
+				exclude: /node_modules/,
+				enforce: 'post',
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {}
+					}
+			 	]
+			}
 		]
 	},
 	resolve: {
-			extensions: ['', '.js', '.tag']
+			extensions: ['.js', '.tag']
 	},
 	plugins: [
-		new webpack.optimize.CommonsChunkPlugin('index', 'index.bundle.js'), // Common function Storage.
+		new webpack.optimize.CommonsChunkPlugin({ // Common function Storage.
+			name:   'index',
+			chunks: [ 'index', 'index.bundle.js' ],
+		}),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
 				warnings: false
 			}
 		}),
+		new webpack.ProvidePlugin({ riot: 'riot' })
 	],
 }

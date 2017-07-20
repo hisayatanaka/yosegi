@@ -5,7 +5,7 @@
 	<div id="my_parts_2_block_1" class="box"></div>
 	<div id="my_parts_2_block_2" class="box"></div>
 
-	<style type="scss" scoped>
+	<style type="scss">
 		@import 'src/sass/_box.scss';
 		.parts_2_master {
 			color: orange;
@@ -16,7 +16,7 @@
 	</style>
 
 	<script>
-		var _self = this; // Class内からの参照用
+		let _self = this; // For reference from within Class.
 
 		// Class
 		let classMain = class Main extends opts.inherit { // Inherited class

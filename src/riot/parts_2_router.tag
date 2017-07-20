@@ -2,13 +2,13 @@
 
 	<div id="my_parts_2_master" class="box"></div>
 
-	<style type="scss" scoped>
+	<style type="scss">
 		@import 'src/sass/_box.scss';
 		.box{ overflow: hidden };
 	</style>
 
 	<script>
-		var _self = this; // Class内からの参照用
+		let _self = this; // For reference from within Class.
 
 		// Class
 		let classMain = class Main {
