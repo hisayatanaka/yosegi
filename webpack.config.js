@@ -14,7 +14,7 @@ module.exports = {
 		publicPath: '/'
 	},
 	watchOptions: { // Enabeling "webpack --watch" on Vagrant.
-		poll: 1000
+		poll: 500
 	},
 	module: {
 		rules: [
