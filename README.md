@@ -129,12 +129,12 @@ $ sudo gem install compass
 ## Links
 
 [Riot.js](http://riotjs.com/v2/ja/ "Riot.js")  
-[Docker](https://www.docker.com/ "Docker")
 [Browsersync](https://www.browsersync.io/ "Browsersync")  
 [Webpack](https://webpack.github.io/ "Webpack")  
 [Babel](https://babeljs.io/ "Babel")  
 [Sass](http://sass-lang.com/ "Sass")  
-[Compass](http://compass-style.org/ "Compass")
+[Compass](http://compass-style.org/ "Compass")  
+[Docker](https://www.docker.com/ "Docker")
 
 ## License
 
