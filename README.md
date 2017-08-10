@@ -19,22 +19,33 @@ Starter package for building web applications based on "Riot.js".
 
 ## Getting started
 
-Clone from this Yosegi repository.
+If you can use "docker-compose" in your project.  
+Execute the following commands.
 
 ```
-https://github.com/hisayatanaka/yosegi.git
+$ cd docker
+$ docker-compose up --build
 ```
 
-Move to the cloned directory.  
+The docker is auto starting Yosegi modules.  
+If you keep the standard settings, you can access it with the following URL.
+
+```
+http://localhost:3000
+```
+
+Only this.
+
+## Getting setup it manually
+
+Move to the cloned directory.   
 Execute the following commands.
 
 ```
 $ npm install
 ```
 
-Only this.
-
-## Usage
+### Usage
 
 First you need to start the browsersync http server and commpass watch.  
 Please execute the following commands (reccomend use tmux or screen).
@@ -111,6 +122,7 @@ $ sudo gem install compass
 * `config.rb` is the Sass configuration file.
 * `webpack.config.js` is a webpack configuration file.
 * `package.json` is a npm configuration file.
+* `docker` directory is a included docker-compose.yaml and Dockerfile.
 
 ## Links
 
@@ -119,7 +131,8 @@ $ sudo gem install compass
 [Webpack](https://webpack.github.io/ "Webpack")  
 [Babel](https://babeljs.io/ "Babel")  
 [Sass](http://sass-lang.com/ "Sass")  
-[Compass](http://compass-style.org/ "Compass")
+[Compass](http://compass-style.org/ "Compass")  
+[Docker](https://www.docker.com/ "Docker")
 
 ## License
 
