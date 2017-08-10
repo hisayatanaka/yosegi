@@ -1,0 +1,19 @@
+version: '3'
+services:
+    sass:
+        build: ./sass
+        image: sass:0.1
+        container_name: node
+        ports:
+            - 3000:3000
+        volumes:
+            - ../:/product/public
+    compass:
+        build: ./compass
+        image: compass:0.1
+        container_name: compass
+        volumes:
+            - ../:/product/public
+volumes:
+        public_volume:
+
