@@ -38,8 +38,6 @@ Only this.
 
 ## Getting setup it manually
 
-But if you would like to set it manually.  
-
 Move to the cloned directory.   
 Execute the following commands.
 
