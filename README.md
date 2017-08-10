@@ -124,6 +124,7 @@ $ sudo gem install compass
 * `config.rb` is the Sass configuration file.
 * `webpack.config.js` is a webpack configuration file.
 * `package.json` is a npm configuration file.
+* `docker` directory is a included docker-compose.yaml and Dockerfile.
 
 ## Links
 
